@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CustomControls.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:CustomControls.Controls"
+    xmlns:local="clr-namespace:CustomControls"
+    xmlns:views="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <!--<views:SKCanvasView PaintSurface="OnPainting" />
+        <controls:IconifyLabel Text="I {{fa-heart-o color=ff0000}} to {{fa-code}} on {{fa-windows color=1BA1E2}}!" FontSize="38" />
+        <Label Text="I {{fa-heart-o color=ff0000}} to {{fa-code}} on {{fa-windows color=1BA1E2}}!" />-->
+
+        <Button
+            Command="{Binding NavigateCommand}"
+            CommandParameter="counterAnimation"
+            Text="Counter animation" />
+
+    </StackLayout>
+
+</ContentPage>
